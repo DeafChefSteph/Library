@@ -3,6 +3,7 @@
     <head>
         <script src="libary.js" defer></script>
         <link rel="stylesheet" href="libary.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Digital Library</title>
     </head>
     <body>
@@ -14,17 +15,18 @@
         <div id="newBookModal" class="modal">
             <div class="modal-content">
                 <h2>Add new Book</h2>
-                
-                <input type="text" id="bookTitle" name="title" placeholder="Title"><br>
-                <input type="text" id="authorOfBook" name="author" placeholder="Autor"><br>
-                <input type="number" id="pagesOfBook" name="pages" placeholder="Pages"><br>
+                <form action="javascript:void(0);" autocomplete="off">
+                <input type="text" id="bookTitle" name="title" placeholder="Title" onfocus="this.placeholder=''"  onblur="this.placeholder='Title'"><br>
+                <input type="text" id="authorOfBook" name="author" placeholder="Author" onfocus="this.placeholder=''"  onblur="this.placeholder='Author'"><br>
+                <input type="number" id="pagesOfBook" name="pages" placeholder="Pages"  onfocus="this.placeholder=''"  onblur="this.placeholder='Pages'"><br>
                 
                 <button id="readOrNotRead">Read</button> <br>
                 <button id="cancleProgress">Cancel</button>
                 <button id="submitBook">Add</button>
+            </form>
             </div>
         </div> 
-
+        <br>
         <div id="listOfBooks">
             
         </div>
