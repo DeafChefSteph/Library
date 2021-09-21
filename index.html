@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src=""></script>
-        <
+        <script src="libary.js" defer></script>
+        <link rel="stylesheet" href="libary.css">
+        <title>Digital Library</title>
     </head>
+    <body>
+        <header> <h1>Digital Library</h1></header>
+        <div style="text-align: center;">
+            <button id="addNewBook">Add new Book</button>
+        </div>
+       
+        <div id="newBookModal" class="modal">
+            <div class="modal-content">
+                <h2>Add new Book</h2>
+                
+                <input type="text" id="bookTitle" name="title" placeholder="Title"><br>
+                <input type="text" id="authorOfBook" name="author" placeholder="Autor"><br>
+                <input type="number" id="pagesOfBook" name="pages" placeholder="Pages"><br>
+                
+                <button id="readOrNotRead">Read</button> <br>
+                <button id="cancleProgress">Cancel</button>
+                <button id="submitBook">Add</button>
+            </div>
+        </div> 
+
+        <div id="listOfBooks">
+            
+        </div>
+    </body>
 </html>

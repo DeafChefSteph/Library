@@ -1,3 +1,1 @@
-
-
-Some ReadMe Text. 
+A digital library where books can be entered. As of now the books are stored only in JS. Thus they are deleted when the website is refreshed. All functions in JS (beside storage) are completed. Styling is still insufficient 
