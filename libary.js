@@ -11,12 +11,22 @@ const pageNumber = document.querySelector('#pagesOfBook');
 
 const bookList = document.querySelector('#listOfBooks');
 
-function Book (title, author, pages, readOrNotRead){
+
+class Book {
+    constructor(title, author, pages, readOrNotRead){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.readOrNotRead = readOrNotRead;
+    }
+}
+
+/*function Book (title, author, pages, readOrNotRead){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.readOrNotRead = readOrNotRead;
-}
+}*/
 
 let wasRead = true;
 let arrayOfObjects = []; 
